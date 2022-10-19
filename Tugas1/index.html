@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Patrick+Hand&display=swap');
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tugas 1 </title>
+</head>
+<body>
+    <div class="title">
+        <h1>GO BLOX</h1>
+    </div><br><br>
+
+    <div class="pictandhist">
+        <canvas id="canvas1" ></canvas>
+        <canvas id="canvas2" ></canvas>
+    </div>
+
+    <br>
+    <div class="tos">
+    <select name="" id="histval">
+        <option value="0">Red</option>
+        <option value="1">Green</option>
+        <option value="2">Blue</option>
+      </select>
+      <button id="hist1">Histogram</button>
+    </div>
+
+      <br>
+
+      <div class="readrest">
+    <div class="readimage">
+    <button id="read">Baca Gambar</button>
+    </div>
+
+    <div class="restore2original">
+    <button id="ori">Original Gambar</button>
+    </div>
+  </div>
+
+  <br>
+    
+  <div class="hideandseek">
+    <div class="rangergb">
+    R
+    <input
+      type="range"
+      name=""
+      id="ch1"
+      data-id="1"
+      min="-255"
+      max="255"
+    /><input type="text" name="" id="chv1" size="3" disabled value="0" /><br />
+    G
+    <input
+      type="range"
+      name=""
+      id="ch2"
+      data-id="2"
+      min="-255"
+      max="255"
+    /><input type="text" name="" id="chv2" size="3" disabled value="0" /><br />
+    B
+    <input
+      type="range"
+      name=""
+      id="ch3"
+      data-id="3"
+      min="-255"
+      max="255"
+    /><input type="text" name="" id="chv3" size="3" disabled value="0" /><br />
+    A
+    <input type="range" name="" id="ch4" data-id="4" min="0" max="255" /><input
+      type="text"
+      name=""
+      id="chv4"
+      size="3"
+      disabled
+      value="255"
+    /><br />
+  </div>
+
+    <div class="defrgb">
+    <button id="default">Default RGBA</button>
+    </div>
+
+  </div>
+
+
+    <script src="js/pc.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
