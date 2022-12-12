@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Patrick+Hand&display=swap');
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Tugas 1 </title>
+</head>
+
+<body>
+  <div class="title">
+    <h1>GO BLOX</h1>
+  </div><br><br>
+
+  <div class="pictandhist">
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+  </div>
+
+  <br>
+  <div class="tos">
+    <select name="" id="histval">
+      <option value="0">Red</option>
+      <option value="1">Green</option>
+      <option value="2">Blue</option>
+    </select>
+    <button id="hist1">Histogram</button>
+  </div>
+  <br>
+
+  <!-- UAS -->
+  <div class="readrest">
+    <button id="uas">UAS</button>
+  </div>
+
+  <!-- modul 7 -->
+
+  <br>
+  <div class="defrgba">
+
+				Rotasi : <input type="text" id="rotate_val" size="3" disabled value="0">&#176<input type="range" min="0" max="360" id="rotate" value="0"><br>
+				Translasi X : <input type="range" min="0" max="100" id="transx" value="0"><input type="text" id="transx_val" size="3" disabled value="0"><br>
+				Translasi Y : <input type="range" min="0" max="100" id="transy" value="0"><input type="text" id="transy_val" size="3" disabled value="0"><br>
+      </div>
+
+  <br>
+  <!-- modul 8 -->
+  scale:<input type="range" min="1" max="10" id="scale" value="1" step="0.1">
+<br> 
+<!-- modul 6 -->
+  <div class="readrest">
+    <button id="sobel">SOBEL</button>
+    <button id="prewitt">PREWITT</button>
+  </div>
+
+
+
+  <!-- modul 5 -->
+  <div class="readrest">
+    <button id="roberts">ROBERTS</button>
+    <button id="laplacian">LAPLACIAN</button>
+  </div>
+
+  <br>
+
+  <div class="readrest">
+    <div class="readimage">
+      <button id="read">Baca Gambar</button>
+    </div>
+
+    <div class="restore2original">
+      <button id="ori">Original Gambar</button>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="hideandseek">
+    <div class="rangergb">
+      R
+      <input type="range" name="" id="ch1" data-id="1" min="-255" max="255" /><input type="text" name="" id="chv1"
+        size="3" disabled value="0" /><br />
+      G
+      <input type="range" name="" id="ch2" data-id="2" min="-255" max="255" /><input type="text" name="" id="chv2"
+        size="3" disabled value="0" /><br />
+      B
+      <input type="range" name="" id="ch3" data-id="3" min="-255" max="255" /><input type="text" name="" id="chv3"
+        size="3" disabled value="0" /><br />
+      A
+      <input type="range" name="" id="ch4" data-id="4" min="0" max="255" /><input type="text" name="" id="chv4" size="3"
+        disabled value="255" /><br />
+    </div>
+
+    <div class="defrgb">
+      <button id="default">Default RGBA</button>
+    </div>
+
+  </div>
+
+  <div class="tambahan">
+    <div class="neg">
+      <button id="negatif">Negatif</button>  
+    </div>
+    <div class="grays">
+      <button id="grayscl">Grayscale</button>
+    </div> 
+
+  </div>
+
+  <div class="tresbrg">
+    threshold <input type="range" min="0" max="255" id="threshold" value="0">
+    <input type="text" id="threshold_val" size="3" disabled value="0">&nbsp
+    <button id="thdefault">reset</button><br>
+
+    brightness <input type="range" min="-255" max="255" data-id="4" id="brightness" value="0">
+    <input type="text" id="brightness_val" size="3" disabled value="0">&nbsp
+    <button id="brdefault">reset</button><br>
+
+  </div>
+
+  <div class="mdl3">
+    <div class="hor">
+      <button id="flip1">Horizontal</button>
+    </div>
+    <div class="ver">
+      <button id="flip2">Vertikal</button>
+    </div>
+    <div class="gab">
+      <button id="flip3">Gabungan</button>
+    </div>
+    <div class="mir">
+      <button id="mirror">Mirroring</button>
+    </div>
+  </div>
+
+  <div class="readrest">
+    <button id="BT1">Button1</button>  
+    <button id="BT2">Button2</button>  
+    <button id="BT3">Button3</button> 
+  </div>
+
+  <div class="readrest">
+    <input type="number" id="num">
+    <button id="mean">Mean</button>
+    <button id="median">median</button>
+    
+  </div>
+
+
+
+
+  <script src="js/pc.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

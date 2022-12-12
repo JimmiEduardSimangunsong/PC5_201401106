@@ -1,0 +1,392 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position:relative;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+
+.title{
+    margin: 0 auto;
+    width: 50%;
+    height: 6%;
+    padding: 20px;
+    background: #ffffe0;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.title h1{
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 7vh;
+}
+
+.pictandhist{
+    align-items: center;
+    justify-content: center;
+    /* height: 62%; */
+    height: auto;
+    width: 50%; 
+    margin: auto;
+    border: solid red;
+    overflow: hidden;
+    background: #c0c0c0;
+}
+
+#canvas1{
+    width: 50%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.tos{
+    background-color:rebeccapurple;
+    width: 25%;
+    height: 8%;
+    display: flex;
+    margin: auto;
+}
+
+#hist1{
+    height: 100%;
+    width: 50%;
+    background: #90fff6;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4vh;
+}
+
+.tos #hist1:hover{
+    background: #28ffff;
+}
+
+#histval{
+    height: 100%;
+    width: 50%;
+    background: #90fff6;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4vh;
+}
+
+.readrest{
+    display: grid;
+    grid-template-areas: "readimage restore2original";
+    gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    height: 10%;
+}
+
+.readimage{
+    grid-area: readimage;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+
+}
+
+.restore2original{
+    grid-area: restore2original;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+}
+
+#read{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background: #a0ea9c;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4vh;
+}
+
+.readrest .readimage #read:hover{
+    background: #54ec4c;
+}
+
+#ori{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background: #a0ea9c;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4vh;
+    
+}
+
+.readrest .restore2original #ori:hover{
+    background: #54ec4c;
+}
+
+
+.hideandseek{
+    display: grid;
+    grid-template-areas: "defrgb"
+    "rangergb";
+    gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    height: 40%;
+}
+
+.rangergb{
+    grid-area: rangergb;
+    margin: auto;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+.defrgb{
+    grid-area: defrgb;
+    margin: auto;
+    width: 25%;
+    height: 80%;
+    background-color: burlywood;
+}
+
+#default{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: #ffe140;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4vh;
+}
+
+.tambahan{
+    display: grid;
+    grid-template-areas: "neg grays";
+    gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    height: 10%;
+}
+
+.neg{
+    grid-area: neg;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    background: #90fff6;
+}
+
+.tambahan .neg #negatif:hover{
+    background: #28ffff;
+}
+
+
+.grays{
+    grid-area: grays;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    background: #90fff6;
+}
+
+.tambahan .grays #grayscl:hover{
+    background: #28ffff;
+}
+
+#negatif{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: #ffe140;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4vh;
+}
+
+#grayscl{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: #ffe140;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4vh;
+}
+
+.tresbrg{
+    margin: auto;
+    width: 25%;
+    height: 20%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 3.5vh;
+    text-align: center;
+}
+
+.tresbrg #thdefault{
+    width: 30%;
+    background: #54ec4c;
+    font-family: 'Dosis', sans-serif;
+    font-size: 3vh;
+    
+}
+
+.tresbrg #brdefault{
+    width: 30%;
+    background: #54ec4c;
+    font-family: 'Dosis', sans-serif;
+    font-size: 3vh;
+
+}
+
+.hideandseek .defrgb #default:hover{
+    background: #fff128;
+
+}
+
+/* modul 3 */
+
+.mdl3{
+    display: grid;
+    grid-template-areas: "hor ver gab mir";
+    gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    height: 10%;
+    width: 100%;
+}
+
+.hor{
+    grid-area: hor;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    background: #90fff6;
+}
+
+.ver{
+    grid-area: ver;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    background: #90fff6;
+}
+
+.gab{
+    grid-area: gab;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    background: #90fff6;
+}
+.mir{
+    grid-area: mir;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    background: #90fff6;
+}
+
+#flip1{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: #ffe140;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4vh;
+}
+#flip2{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: #ffe140;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4vh;
+}
+
+#flip3{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: #ffe140;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4vh;
+}
+
+#mirror{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: #ffe140;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4vh;
+}
+
+.mdl3 .hor #flip1:hover{
+    background: #28ffff;
+}
+
+.mdl3 .ver #flip2:hover{
+    background: #28ffff;
+}
+
+.mdl3 .gab #flip3:hover{
+    background: #28ffff;
+}
+
+.mdl3 .mir #mirror:hover{
+    background: #28ffff;
+}
+
+
+
+/*untuk layar device berukuran kecil*/
+@media (max-width:991px) {
+    #hist1{
+        font-size: 2vh;
+    }
+    #histval{
+        font-size: 2vh;
+    }
+
+    #default{
+        font-size: 2vh;
+    }
+
+    #ori{
+        font-size: 2vh;
+    }
+
+    #read{
+        font-size: 2vh;
+    }
+
+    .defrgb{
+        height: auto;
+
+    }
+
+    .pictandhist{
+        width: auto;
+        height: auto;
+    }
+
+    #canvas1{
+        width: 70%;
+        height: auto;
+    }
+
+    #canvas2{
+        width: auto;
+        height: auto;
+    }
+
+
+ }
+
+
+ 
