@@ -3,4 +3,4 @@
 ### PC 5
 
 ### Screenshot Tampilan
-![Tampilan](https://github.com/JimmiEduardSimangunsong/PC5_Tugas1/blob/main/Screenshot/tampilan.png?raw=true)
+![Tampilan](https://github.com/JimmiEduardSimangunsong/PC5_201401106/blob/master/UAS/Screenshot/uas.jpg?raw=true)
